@@ -1,11 +1,11 @@
 import streamlit as st
 import google.generativeai as genai
 
-st.title("HI THERE ! IT'S NANDS HERE")
+st.title("HI WELCOME TO THE APP - SURYA")
 
 genai.configure(api_key="AIzaSyAuRvJW_U07AUx3BACR8NggK0L1ZAxcA-g")
 
-text=st.text_input("Enter your question") 
+text=st.text_input("Ask your query here") 
 
 model = genai.GenerativeModel('gemini-pro')
 chat = model.start_chat(history=[])
